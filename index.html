@@ -16,29 +16,29 @@
                 <input type="number" class="form-control" id="passwordLength" placeholder="Enter length" min="6">
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="includeNumbers">
+                <input class="form-check-input" type="checkbox" id="numbersInp">
                 <label class="form-check-label" for="includeNumbers">Include Numbers</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="includeLowercase">
+                <input class="form-check-input" type="checkbox" id="lowerLetters">
                 <label class="form-check-label" for="includeLowercase">Include Lowercase Characters</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="includeUppercase">
+                <input class="form-check-input" type="checkbox" id="upperLetters">
                 <label class="form-check-label" for="includeUppercase">Include Uppercase Characters</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="includeSymbols">
+                <input class="form-check-input" type="checkbox" id="specialChar">
                 <label class="form-check-label" for="includeSymbols">Include Symbols</label>
             </div>
             <div class="mb-3 mt-3">
                 <label for="passwordQuantity" class="form-label">Quantity:</label>
-                <input type="number" class="form-control" id="passwordQuantity" placeholder="Enter quantity" min="1">
+                <input type="number" class="form-control" id="passQuantity" placeholder="Enter quantity" min="1">
             </div>
-            <button class="btn btn-primary w-100">Generate</button>
+            <button class="btn btn-primary w-100" id="genPassBtn" onclick="generatePass()">Generate</button>
             <div class="mt-3">
                 <label class="form-label">Your New Passwords:</label>
-                <textarea class="form-control" rows="4" readonly></textarea>
+                <textarea class="form-control" rows="4" readonly id="output"></textarea>
             </div>
         </div>
     </div>
