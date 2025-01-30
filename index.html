@@ -31,15 +31,14 @@
                 <input class="form-check-input" type="checkbox" id="specialChar">
                 <label class="form-check-label" for="includeSymbols">Include Symbols</label>
             </div>
-            <div class="mb-3 mt-3">
-                <label for="passwordQuantity" class="form-label">Quantity:</label>
-                <input type="number" class="form-control" id="passQuantity" placeholder="Enter quantity" min="1">
-            </div>
+            
             <button class="btn btn-primary w-100" id="genPassBtn" onclick="generatePass()">Generate</button>
+            
             <div class="mt-3">
                 <label class="form-label">Your New Passwords:</label>
                 <textarea class="form-control" rows="4" readonly id="output"></textarea>
-            </div>
+            </div> <br>
+            <button class="btn btn-primary w-100" id="clearEntry" onclick="EmptyText()">Clear</button>
         </div>
     </div>
     <script src="app.js"></script>
